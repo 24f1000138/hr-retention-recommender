@@ -2,7 +2,7 @@
 
 A Streamlit web app that estimates each employee's risk of leaving, shows what is driving that risk, and recommends retention actions ranked by priority. It was built for the BMGT107L Business Analytics project on the IBM HR Analytics Employee Attrition dataset (1,470 employees, 16.1% attrition).
 
-**Live app:** add your Streamlit Cloud link here
+**Live app:** https://hr-retention-recommender.streamlit.app/
 
 ![Assess an employee](screenshots/app_02a_risk.png)
 
