@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Model training leftovers
+catboost_info/
+
+# Editors and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*.docx
+
+# Secrets (never commit these)
+.env
+.streamlit/secrets.toml
+
+# Assignment reports stay off the public repo; submit them separately
+reports/

@@ -1,0 +1,11 @@
+# Extra packages to re-run the analysis, the model comparison and the reports.
+# Install with: pip install -r requirements-analysis.txt
+-r requirements.txt
+statsmodels==0.15.0
+matplotlib==3.11.2
+seaborn==0.13.2
+xgboost>=3.2,<3.5
+lightgbm==4.7.0
+catboost==1.2.10
+imbalanced-learn==0.14.2
+python-docx==1.2.0

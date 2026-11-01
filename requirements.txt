@@ -1,0 +1,9 @@
+# Packages the web app needs (used by Streamlit Community Cloud).
+# Tested on Python 3.11, 3.12 and 3.13.
+streamlit==1.66.1
+pandas==3.0.5
+numpy==2.4.6
+scikit-learn==1.9.1
+scipy==1.17.1
+joblib==1.6.0
+plotly==7.1.0

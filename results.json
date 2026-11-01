@@ -1,0 +1,945 @@
+{
+  "n_rows": 1470,
+  "n_cols_raw": 35,
+  "missing": 0,
+  "attrition_rate": 16.12,
+  "attrition_counts": {
+    "No": 1233,
+    "Yes": 237
+  },
+  "descriptive": [
+    {
+      "Variable": "Age",
+      "mean": 36.92,
+      "median": 36.0,
+      "std": 9.14,
+      "min": 18.0,
+      "max": 60.0,
+      "skew": 0.41
+    },
+    {
+      "Variable": "MonthlyIncome",
+      "mean": 6502.93,
+      "median": 4919.0,
+      "std": 4707.96,
+      "min": 1009.0,
+      "max": 19999.0,
+      "skew": 1.37
+    },
+    {
+      "Variable": "DistanceFromHome",
+      "mean": 9.19,
+      "median": 7.0,
+      "std": 8.11,
+      "min": 1.0,
+      "max": 29.0,
+      "skew": 0.96
+    },
+    {
+      "Variable": "TotalWorkingYears",
+      "mean": 11.28,
+      "median": 10.0,
+      "std": 7.78,
+      "min": 0.0,
+      "max": 40.0,
+      "skew": 1.12
+    },
+    {
+      "Variable": "YearsAtCompany",
+      "mean": 7.01,
+      "median": 5.0,
+      "std": 6.13,
+      "min": 0.0,
+      "max": 40.0,
+      "skew": 1.76
+    },
+    {
+      "Variable": "YearsSinceLastPromotion",
+      "mean": 2.19,
+      "median": 1.0,
+      "std": 3.22,
+      "min": 0.0,
+      "max": 15.0,
+      "skew": 1.98
+    },
+    {
+      "Variable": "JobSatisfaction",
+      "mean": 2.73,
+      "median": 3.0,
+      "std": 1.1,
+      "min": 1.0,
+      "max": 4.0,
+      "skew": -0.33
+    },
+    {
+      "Variable": "WorkLifeBalance",
+      "mean": 2.76,
+      "median": 3.0,
+      "std": 0.71,
+      "min": 1.0,
+      "max": 4.0,
+      "skew": -0.55
+    }
+  ],
+  "top_corr_with_attrition": {
+    "OverTimeFlag": 0.246,
+    "TotalWorkingYears": -0.171,
+    "JobLevel": -0.169,
+    "YearsInCurrentRole": -0.161,
+    "MonthlyIncome": -0.16,
+    "Age": -0.159,
+    "YearsWithCurrManager": -0.156,
+    "StockOptionLevel": -0.137
+  },
+  "role_table": [
+    {
+      "Department": "Sales",
+      "JobRole": "Sales Representative",
+      "Headcount": 83,
+      "Leavers": 33,
+      "Rate": 39.8
+    },
+    {
+      "Department": "Research & Development",
+      "JobRole": "Laboratory Technician",
+      "Headcount": 259,
+      "Leavers": 62,
+      "Rate": 23.9
+    },
+    {
+      "Department": "Human Resources",
+      "JobRole": "Human Resources",
+      "Headcount": 52,
+      "Leavers": 12,
+      "Rate": 23.1
+    },
+    {
+      "Department": "Sales",
+      "JobRole": "Sales Executive",
+      "Headcount": 326,
+      "Leavers": 57,
+      "Rate": 17.5
+    },
+    {
+      "Department": "Research & Development",
+      "JobRole": "Research Scientist",
+      "Headcount": 292,
+      "Leavers": 47,
+      "Rate": 16.1
+    },
+    {
+      "Department": "Research & Development",
+      "JobRole": "Manufacturing Director",
+      "Headcount": 145,
+      "Leavers": 10,
+      "Rate": 6.9
+    },
+    {
+      "Department": "Research & Development",
+      "JobRole": "Healthcare Representative",
+      "Headcount": 131,
+      "Leavers": 9,
+      "Rate": 6.9
+    },
+    {
+      "Department": "Research & Development",
+      "JobRole": "Manager",
+      "Headcount": 54,
+      "Leavers": 3,
+      "Rate": 5.6
+    },
+    {
+      "Department": "Sales",
+      "JobRole": "Manager",
+      "Headcount": 37,
+      "Leavers": 2,
+      "Rate": 5.4
+    },
+    {
+      "Department": "Research & Development",
+      "JobRole": "Research Director",
+      "Headcount": 80,
+      "Leavers": 2,
+      "Rate": 2.5
+    },
+    {
+      "Department": "Human Resources",
+      "JobRole": "Manager",
+      "Headcount": 11,
+      "Leavers": 0,
+      "Rate": 0.0
+    }
+  ],
+  "chi_square": [
+    {
+      "Variable": "OverTime",
+      "Chi2": 87.56,
+      "df": 1,
+      "p_value": 8.16e-21,
+      "Cramers_V": 0.244,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "JobRole",
+      "Chi2": 86.19,
+      "df": 8,
+      "p_value": 2.75e-15,
+      "Cramers_V": 0.242,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "JobLevel",
+      "Chi2": 72.53,
+      "df": 4,
+      "p_value": 6.63e-15,
+      "Cramers_V": 0.222,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "StockOptionLevel",
+      "Chi2": 60.6,
+      "df": 3,
+      "p_value": 4.38e-13,
+      "Cramers_V": 0.203,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "MaritalStatus",
+      "Chi2": 46.16,
+      "df": 2,
+      "p_value": 9.46e-11,
+      "Cramers_V": 0.177,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "JobInvolvement",
+      "Chi2": 28.49,
+      "df": 3,
+      "p_value": 2.86e-06,
+      "Cramers_V": 0.139,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "BusinessTravel",
+      "Chi2": 24.18,
+      "df": 2,
+      "p_value": 5.61e-06,
+      "Cramers_V": 0.128,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "EnvironmentSatisfaction",
+      "Chi2": 22.5,
+      "df": 3,
+      "p_value": 5.12e-05,
+      "Cramers_V": 0.124,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "JobSatisfaction",
+      "Chi2": 17.51,
+      "df": 3,
+      "p_value": 0.000556,
+      "Cramers_V": 0.109,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "WorkLifeBalance",
+      "Chi2": 16.33,
+      "df": 3,
+      "p_value": 0.000973,
+      "Cramers_V": 0.105,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "Department",
+      "Chi2": 10.8,
+      "df": 2,
+      "p_value": 0.00453,
+      "Cramers_V": 0.086,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "EducationField",
+      "Chi2": 16.02,
+      "df": 5,
+      "p_value": 0.00677,
+      "Cramers_V": 0.104,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "Gender",
+      "Chi2": 1.12,
+      "df": 1,
+      "p_value": 0.291,
+      "Cramers_V": 0.028,
+      "Significant": "No"
+    }
+  ],
+  "t_tests": [
+    {
+      "Variable": "MonthlyIncome",
+      "Mean_Leavers": 4787.09,
+      "Mean_Stayers": 6832.74,
+      "t": -7.48,
+      "p_value_t": 4.43e-13,
+      "p_value_MW": 2.95e-14,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "TotalWorkingYears",
+      "Mean_Leavers": 8.24,
+      "Mean_Stayers": 11.86,
+      "t": -7.02,
+      "p_value_t": 1.16e-11,
+      "p_value_MW": 2.4e-14,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "YearsInCurrentRole",
+      "Mean_Leavers": 2.9,
+      "Mean_Stayers": 4.48,
+      "t": -6.85,
+      "p_value_t": 3.19e-11,
+      "p_value_MW": 4.43e-12,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "YearsWithCurrManager",
+      "Mean_Leavers": 2.85,
+      "Mean_Stayers": 4.37,
+      "t": -6.63,
+      "p_value_t": 1.19e-10,
+      "p_value_MW": 1.81e-11,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "Age",
+      "Mean_Leavers": 33.61,
+      "Mean_Stayers": 37.56,
+      "t": -5.83,
+      "p_value_t": 1.38e-08,
+      "p_value_MW": 5.3e-11,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "YearsAtCompany",
+      "Mean_Leavers": 5.13,
+      "Mean_Stayers": 7.37,
+      "t": -5.28,
+      "p_value_t": 2.29e-07,
+      "p_value_MW": 2.92e-13,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "DistanceFromHome",
+      "Mean_Leavers": 10.63,
+      "Mean_Stayers": 8.92,
+      "t": 2.89,
+      "p_value_t": 0.00414,
+      "p_value_MW": 0.00239,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "TrainingTimesLastYear",
+      "Mean_Leavers": 2.62,
+      "Mean_Stayers": 2.83,
+      "t": -2.33,
+      "p_value_t": 0.0204,
+      "p_value_MW": 0.0473,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "DailyRate",
+      "Mean_Leavers": 750.36,
+      "Mean_Stayers": 812.5,
+      "t": -2.18,
+      "p_value_t": 0.03,
+      "p_value_MW": 0.029,
+      "Significant": "Yes"
+    },
+    {
+      "Variable": "NumCompaniesWorked",
+      "Mean_Leavers": 2.94,
+      "Mean_Stayers": 2.65,
+      "t": 1.57,
+      "p_value_t": 0.116,
+      "p_value_MW": 0.242,
+      "Significant": "No"
+    },
+    {
+      "Variable": "YearsSinceLastPromotion",
+      "Mean_Leavers": 1.95,
+      "Mean_Stayers": 2.23,
+      "t": -1.29,
+      "p_value_t": 0.199,
+      "p_value_MW": 0.0412,
+      "Significant": "No"
+    },
+    {
+      "Variable": "PercentSalaryHike",
+      "Mean_Leavers": 15.1,
+      "Mean_Stayers": 15.23,
+      "t": -0.5,
+      "p_value_t": 0.614,
+      "p_value_MW": 0.366,
+      "Significant": "No"
+    },
+    {
+      "Variable": "HourlyRate",
+      "Mean_Leavers": 65.57,
+      "Mean_Stayers": 65.95,
+      "t": -0.26,
+      "p_value_t": 0.791,
+      "p_value_MW": 0.798,
+      "Significant": "No"
+    }
+  ],
+  "anova_income_joblevel": {
+    "F": 4530.22,
+    "p_value": 0.0
+  },
+  "shapiro_income": {
+    "W": 0.845,
+    "p_value": 9.63e-22
+  },
+  "slr": {
+    "r2": 0.903,
+    "adj_r2": 0.903,
+    "aic": 25607.7,
+    "coef": {
+      "const": -1839.01,
+      "JobLevel": 4041.75
+    }
+  },
+  "mlr": {
+    "r2": 0.906,
+    "adj_r2": 0.905,
+    "aic": 25575.7,
+    "f": 2811.2,
+    "f_p": 0.0,
+    "coef": [
+      {
+        "Term": "const",
+        "Coef": -1596.4,
+        "Std_Err": 380.11,
+        "t": -4.2,
+        "p_value": 2.83e-05
+      },
+      {
+        "Term": "JobLevel",
+        "Coef": 3793.56,
+        "Std_Err": 55.1,
+        "t": 68.85,
+        "p_value": 0.0
+      },
+      {
+        "Term": "TotalWorkingYears",
+        "Coef": 60.9,
+        "Std_Err": 10.19,
+        "t": 5.98,
+        "p_value": 2.85e-09
+      },
+      {
+        "Term": "YearsAtCompany",
+        "Coef": -15.37,
+        "Std_Err": 8.12,
+        "t": -1.89,
+        "p_value": 0.0587
+      },
+      {
+        "Term": "Age",
+        "Coef": -9.76,
+        "Std_Err": 5.77,
+        "t": -1.69,
+        "p_value": 0.0909
+      },
+      {
+        "Term": "PerformanceRating",
+        "Coef": 16.11,
+        "Std_Err": 104.83,
+        "t": 0.15,
+        "p_value": 0.878
+      }
+    ],
+    "durbin_watson": 2.057
+  },
+  "vif": [
+    {
+      "Variable": "JobLevel",
+      "VIF": 2.6
+    },
+    {
+      "Variable": "TotalWorkingYears",
+      "VIF": 4.4
+    },
+    {
+      "Variable": "YearsAtCompany",
+      "VIF": 1.73
+    },
+    {
+      "Variable": "Age",
+      "VIF": 1.94
+    },
+    {
+      "Variable": "PerformanceRating",
+      "VIF": 1.0
+    }
+  ],
+  "underpaid_share": 24.3,
+  "attr_underpaid": 13.2,
+  "attr_not_underpaid": 17.1,
+  "underpaid_chi_p": 0.0962,
+  "train_n": 1102,
+  "test_n": 368,
+  "knn_k": 27,
+  "tree_params": {
+    "max_depth": 4,
+    "min_samples_leaf": 20
+  },
+  "classifier_performance": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.867,
+      "Precision": 0.667,
+      "Recall": 0.339,
+      "F1": 0.449,
+      "AUC": 0.811,
+      "TN": 299,
+      "FP": 10,
+      "FN": 39,
+      "TP": 20
+    },
+    {
+      "Model": "Decision Tree",
+      "Accuracy": 0.848,
+      "Precision": 0.56,
+      "Recall": 0.237,
+      "F1": 0.333,
+      "AUC": 0.705,
+      "TN": 298,
+      "FP": 11,
+      "FN": 45,
+      "TP": 14
+    },
+    {
+      "Model": "KNN",
+      "Accuracy": 0.84,
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "AUC": 0.666,
+      "TN": 309,
+      "FP": 0,
+      "FN": 59,
+      "TP": 0
+    },
+    {
+      "Model": "Naive Bayes",
+      "Accuracy": 0.66,
+      "Precision": 0.274,
+      "Recall": 0.678,
+      "F1": 0.39,
+      "AUC": 0.711,
+      "TN": 203,
+      "FP": 106,
+      "FN": 19,
+      "TP": 40
+    },
+    {
+      "Model": "LDA",
+      "Accuracy": 0.87,
+      "Precision": 0.657,
+      "Recall": 0.39,
+      "F1": 0.489,
+      "AUC": 0.799,
+      "TN": 297,
+      "FP": 12,
+      "FN": 36,
+      "TP": 23
+    }
+  ],
+  "best_model": "Logistic Regression",
+  "lr_youden_threshold": 0.279,
+  "lr_tuned": {
+    "Accuracy": 0.856,
+    "Precision": 0.547,
+    "Recall": 0.593,
+    "F1": 0.569
+  },
+  "logit": {
+    "pseudo_r2": 0.253,
+    "llr_p": 5.44e-61,
+    "terms": [
+      {
+        "Term": "OverTimeFlag",
+        "Coef": 1.715,
+        "Odds_Ratio": 5.559,
+        "p_value": 2.95e-23
+      },
+      {
+        "Term": "JobSatisfaction",
+        "Coef": -0.366,
+        "Odds_Ratio": 0.694,
+        "p_value": 9.7e-07
+      },
+      {
+        "Term": "EnvironmentSatisfaction",
+        "Coef": -0.385,
+        "Odds_Ratio": 0.681,
+        "p_value": 4.11e-07
+      },
+      {
+        "Term": "WorkLifeBalance",
+        "Coef": -0.301,
+        "Odds_Ratio": 0.74,
+        "p_value": 0.00805
+      },
+      {
+        "Term": "JobInvolvement",
+        "Coef": -0.574,
+        "Odds_Ratio": 0.563,
+        "p_value": 4.48e-07
+      },
+      {
+        "Term": "StockOptionLevel",
+        "Coef": -0.238,
+        "Odds_Ratio": 0.788,
+        "p_value": 0.0837
+      },
+      {
+        "Term": "YearsSinceLastPromotion",
+        "Coef": 0.144,
+        "Odds_Ratio": 1.155,
+        "p_value": 0.000151
+      },
+      {
+        "Term": "DistanceFromHome",
+        "Coef": 0.037,
+        "Odds_Ratio": 1.037,
+        "p_value": 0.000193
+      },
+      {
+        "Term": "NumCompaniesWorked",
+        "Coef": 0.164,
+        "Odds_Ratio": 1.178,
+        "p_value": 3.05e-06
+      },
+      {
+        "Term": "TotalWorkingYears",
+        "Coef": -0.063,
+        "Odds_Ratio": 0.939,
+        "p_value": 0.0159
+      },
+      {
+        "Term": "YearsAtCompany",
+        "Coef": -0.043,
+        "Odds_Ratio": 0.958,
+        "p_value": 0.131
+      },
+      {
+        "Term": "Age",
+        "Coef": -0.031,
+        "Odds_Ratio": 0.969,
+        "p_value": 0.0126
+      },
+      {
+        "Term": "MonthlyIncome_k",
+        "Coef": -0.067,
+        "Odds_Ratio": 0.935,
+        "p_value": 0.0483
+      },
+      {
+        "Term": "Single",
+        "Coef": 0.755,
+        "Odds_Ratio": 2.128,
+        "p_value": 0.000873
+      },
+      {
+        "Term": "TravelFrequently",
+        "Coef": 0.885,
+        "Odds_Ratio": 2.424,
+        "p_value": 3.76e-06
+      }
+    ]
+  },
+  "pca_var": [
+    20.24,
+    7.98,
+    7.63,
+    5.18,
+    4.72,
+    4.6,
+    4.57,
+    4.51,
+    4.44,
+    4.31
+  ],
+  "pca_n_80": 13,
+  "pca_kaiser": 9,
+  "pca_top_loadings": {
+    "PC1": [
+      "TotalWorkingYears",
+      "YearsAtCompany",
+      "JobLevel",
+      "MonthlyIncome",
+      "YearsInCurrentRole"
+    ],
+    "PC2": [
+      "PerformanceRating",
+      "PercentSalaryHike",
+      "NumCompaniesWorked",
+      "Age",
+      "YearsWithCurrManager"
+    ],
+    "PC3": [
+      "PercentSalaryHike",
+      "PerformanceRating",
+      "NumCompaniesWorked",
+      "Age",
+      "YearsWithCurrManager"
+    ]
+  },
+  "fa_top_loadings": {
+    "F1": [
+      "MonthlyIncome",
+      "JobLevel",
+      "TotalWorkingYears",
+      "Age"
+    ],
+    "F2": [
+      "YearsAtCompany",
+      "YearsWithCurrManager",
+      "YearsInCurrentRole",
+      "YearsSinceLastPromotion"
+    ],
+    "F3": [
+      "PercentSalaryHike",
+      "PerformanceRating",
+      "RelationshipSatisfaction",
+      "DistanceFromHome"
+    ]
+  },
+  "silhouette": {
+    "2": 0.305,
+    "3": 0.189,
+    "4": 0.191,
+    "5": 0.155,
+    "6": 0.15,
+    "7": 0.146,
+    "8": 0.137
+  },
+  "segments": [
+    {
+      "Segment": 0,
+      "Employees": 130,
+      "AttritionRate": 12.31,
+      "Age": 44.85,
+      "MonthlyIncome": 13878.92,
+      "TotalWorkingYears": 24.04,
+      "YearsAtCompany": 21.43,
+      "YearsSinceLastPromotion": 8.71,
+      "JobSatisfaction": 2.66,
+      "EnvironmentSatisfaction": 2.57,
+      "WorkLifeBalance": 2.77,
+      "OverTimeShare": 26.92,
+      "Name": "Senior long-tenure staff"
+    },
+    {
+      "Segment": 1,
+      "Employees": 826,
+      "AttritionRate": 11.38,
+      "Age": 33.88,
+      "MonthlyIncome": 4657.04,
+      "TotalWorkingYears": 8.0,
+      "YearsAtCompany": 5.42,
+      "YearsSinceLastPromotion": 1.52,
+      "JobSatisfaction": 2.71,
+      "EnvironmentSatisfaction": 2.67,
+      "WorkLifeBalance": 2.78,
+      "OverTimeShare": 0.0,
+      "Name": "Core staff (no overtime)"
+    },
+    {
+      "Segment": 2,
+      "Employees": 339,
+      "AttritionRate": 34.22,
+      "Age": 34.8,
+      "MonthlyIncome": 4768.51,
+      "TotalWorkingYears": 8.49,
+      "YearsAtCompany": 5.41,
+      "YearsSinceLastPromotion": 1.56,
+      "JobSatisfaction": 2.82,
+      "EnvironmentSatisfaction": 2.83,
+      "WorkLifeBalance": 2.73,
+      "OverTimeShare": 100.0,
+      "Name": "Overtime-heavy staff"
+    },
+    {
+      "Segment": 3,
+      "Employees": 175,
+      "AttritionRate": 6.29,
+      "Age": 49.53,
+      "MonthlyIncome": 13096.07,
+      "TotalWorkingYears": 22.69,
+      "YearsAtCompany": 6.88,
+      "YearsSinceLastPromotion": 1.72,
+      "JobSatisfaction": 2.7,
+      "EnvironmentSatisfaction": 2.87,
+      "WorkLifeBalance": 2.71,
+      "OverTimeShare": 24.0,
+      "Name": "Experienced lateral hires"
+    }
+  ],
+  "segment_chi_p": 1.24e-23,
+  "band_counts": {
+    "Low": 1091,
+    "Medium": 110,
+    "High": 32
+  },
+  "action_frequency": [
+    {
+      "Driver": "Low environment satisfaction",
+      "Employees": 74
+    },
+    {
+      "Driver": "No stock options",
+      "Employees": 72
+    },
+    {
+      "Driver": "Low job satisfaction",
+      "Employees": 59
+    },
+    {
+      "Driver": "Regular overtime",
+      "Employees": 57
+    },
+    {
+      "Driver": "Low job involvement",
+      "Employees": 57
+    },
+    {
+      "Driver": "Low absolute pay",
+      "Employees": 44
+    },
+    {
+      "Driver": "Poor work-life balance",
+      "Employees": 43
+    },
+    {
+      "Driver": "Frequent business travel",
+      "Employees": 34
+    },
+    {
+      "Driver": "Many previous employers",
+      "Employees": 30
+    },
+    {
+      "Driver": "Long commute",
+      "Employees": 28
+    }
+  ],
+  "dept_risk": {
+    "Human Resources": 9.3,
+    "Research & Development": 8.3,
+    "Sales": 11.8
+  },
+  "sample_recommendations": [
+    {
+      "Employee": 301,
+      "JobRole": "Sales Representative",
+      "Age": 18,
+      "Risk": 88.5,
+      "Band": "High",
+      "Segment": "Core staff (no overtime)",
+      "PayGap": -42.0,
+      "Actions": [
+        "Assign a mentor and a 12-month development plan with visible growth milestones.",
+        "Set clear goals and involve the employee in decision-making and recognition programmes.",
+        "Consider including the employee in the stock option / long-term incentive plan."
+      ],
+      "Drivers": [
+        "Early-career, single, entry level",
+        "Low job involvement",
+        "No stock options"
+      ]
+    },
+    {
+      "Employee": 1391,
+      "JobRole": "Sales Representative",
+      "Age": 38,
+      "Risk": 71.2,
+      "Band": "High",
+      "Segment": "Core staff (no overtime)",
+      "PayGap": -7.1,
+      "Actions": [
+        "Address workplace concerns raised in surveys (tools, team climate, workspace).",
+        "Hold a stay interview and enrich the role (new responsibilities, project rotation).",
+        "Set clear goals and involve the employee in decision-making and recognition programmes."
+      ],
+      "Drivers": [
+        "Low environment satisfaction",
+        "Low job satisfaction",
+        "Low job involvement"
+      ]
+    },
+    {
+      "Employee": 824,
+      "JobRole": "Laboratory Technician",
+      "Age": 42,
+      "Risk": 70.4,
+      "Band": "High",
+      "Segment": "Core staff (no overtime)",
+      "PayGap": -35.2,
+      "Actions": [
+        "Set clear goals and involve the employee in decision-making and recognition programmes.",
+        "Offer remote days or a transport allowance.",
+        "Address workplace concerns raised in surveys (tools, team climate, workspace)."
+      ],
+      "Drivers": [
+        "Low job involvement",
+        "Long commute",
+        "Low environment satisfaction"
+      ]
+    },
+    {
+      "Employee": 1311,
+      "JobRole": "Research Scientist",
+      "Age": 18,
+      "Risk": 65.1,
+      "Band": "High",
+      "Segment": "Core staff (no overtime)",
+      "PayGap": -26.9,
+      "Actions": [
+        "Assign a mentor and a 12-month development plan with visible growth milestones.",
+        "Offer flexible hours or hybrid working days.",
+        "Address workplace concerns raised in surveys (tools, team climate, workspace)."
+      ],
+      "Drivers": [
+        "Early-career, single, entry level",
+        "Poor work-life balance",
+        "Low environment satisfaction"
+      ]
+    },
+    {
+      "Employee": 54,
+      "JobRole": "Sales Executive",
+      "Age": 26,
+      "Risk": 60.9,
+      "Band": "High",
+      "Segment": "Overtime-heavy staff",
+      "PayGap": -31.4,
+      "Actions": [
+        "Rebalance workload and cap overtime hours; review team staffing levels.",
+        "Set clear goals and involve the employee in decision-making and recognition programmes.",
+        "Offer flexible hours or hybrid working days."
+      ],
+      "Drivers": [
+        "Regular overtime",
+        "Low job involvement",
+        "Poor work-life balance"
+      ]
+    }
+  ],
+  "deployed_model": "Soft voting: LR + LDA + SVM + Gradient boosting"
+}

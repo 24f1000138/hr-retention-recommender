@@ -1,0 +1,184 @@
+{
+  "experiments": [
+    {
+      "Model": "Logistic regression (baseline)",
+      "Family": "Single",
+      "CV_AUC": 0.839,
+      "CV_SD": 0.047,
+      "Test_AUC": 0.808,
+      "Train_AUC": 0.872,
+      "Seconds": 1.6
+    },
+    {
+      "Model": "Logistic regression + engineered features",
+      "Family": "Single",
+      "CV_AUC": 0.843,
+      "CV_SD": 0.047,
+      "Test_AUC": 0.81,
+      "Train_AUC": 0.876,
+      "Seconds": 0.2
+    },
+    {
+      "Model": "Logistic regression + class weights",
+      "Family": "Balancing",
+      "CV_AUC": 0.834,
+      "CV_SD": 0.048,
+      "Test_AUC": 0.812,
+      "Train_AUC": 0.881,
+      "Seconds": 0.2
+    },
+    {
+      "Model": "Logistic regression + SMOTE",
+      "Family": "Balancing",
+      "CV_AUC": 0.836,
+      "CV_SD": 0.045,
+      "Test_AUC": 0.819,
+      "Train_AUC": 0.88,
+      "Seconds": 0.5
+    },
+    {
+      "Model": "SVM (RBF kernel)",
+      "Family": "Single",
+      "CV_AUC": 0.818,
+      "CV_SD": 0.047,
+      "Test_AUC": 0.76,
+      "Train_AUC": 0.957,
+      "Seconds": 0.7
+    },
+    {
+      "Model": "Random forest",
+      "Family": "Bagging",
+      "CV_AUC": 0.809,
+      "CV_SD": 0.037,
+      "Test_AUC": 0.752,
+      "Train_AUC": 1.0,
+      "Seconds": 7.6
+    },
+    {
+      "Model": "Extra trees",
+      "Family": "Bagging",
+      "CV_AUC": 0.811,
+      "CV_SD": 0.044,
+      "Test_AUC": 0.78,
+      "Train_AUC": 1.0,
+      "Seconds": 5.0
+    },
+    {
+      "Model": "Gradient boosting",
+      "Family": "Boosting",
+      "CV_AUC": 0.83,
+      "CV_SD": 0.034,
+      "Test_AUC": 0.786,
+      "Train_AUC": 0.968,
+      "Seconds": 3.5
+    },
+    {
+      "Model": "XGBoost",
+      "Family": "Boosting",
+      "CV_AUC": 0.821,
+      "CV_SD": 0.035,
+      "Test_AUC": 0.777,
+      "Train_AUC": 0.962,
+      "Seconds": 0.6
+    },
+    {
+      "Model": "XGBoost + SMOTE",
+      "Family": "Boosting",
+      "CV_AUC": 0.837,
+      "CV_SD": 0.034,
+      "Test_AUC": 0.782,
+      "Train_AUC": 0.928,
+      "Seconds": 1.1
+    },
+    {
+      "Model": "LightGBM",
+      "Family": "Boosting",
+      "CV_AUC": 0.823,
+      "CV_SD": 0.037,
+      "Test_AUC": 0.779,
+      "Train_AUC": 0.995,
+      "Seconds": 0.7
+    },
+    {
+      "Model": "CatBoost",
+      "Family": "Boosting",
+      "CV_AUC": 0.816,
+      "CV_SD": 0.04,
+      "Test_AUC": 0.759,
+      "Train_AUC": 1.0,
+      "Seconds": 4.5
+    },
+    {
+      "Model": "Soft voting: LR + SVM + CatBoost",
+      "Family": "Ensemble",
+      "CV_AUC": 0.839,
+      "CV_SD": 0.046,
+      "Test_AUC": 0.786,
+      "Train_AUC": 0.992,
+      "Seconds": 4.9
+    },
+    {
+      "Model": "Soft voting: LR + XGBoost + LightGBM + RF",
+      "Family": "Ensemble",
+      "CV_AUC": 0.833,
+      "CV_SD": 0.041,
+      "Test_AUC": 0.788,
+      "Train_AUC": 0.989,
+      "Seconds": 8.8
+    },
+    {
+      "Model": "Weighted voting: 2 LR + SVM + CatBoost",
+      "Family": "Ensemble",
+      "CV_AUC": 0.842,
+      "CV_SD": 0.047,
+      "Test_AUC": 0.794,
+      "Train_AUC": 0.983,
+      "Seconds": 5.1
+    },
+    {
+      "Model": "Soft voting: LR + LDA + SVM + Gradient boosting",
+      "Family": "Ensemble",
+      "CV_AUC": 0.845,
+      "CV_SD": 0.047,
+      "Test_AUC": 0.812,
+      "Train_AUC": 0.94,
+      "Seconds": 4.0
+    },
+    {
+      "Model": "Stacking: LR + LDA + SVM + GB + XGBoost -> LR",
+      "Family": "Ensemble",
+      "CV_AUC": 0.843,
+      "CV_SD": 0.045,
+      "Test_AUC": 0.815,
+      "Train_AUC": 0.932,
+      "Seconds": 21.5
+    },
+    {
+      "Model": "Stacking: LR + SVM + RF + XGBoost + CatBoost -> LR",
+      "Family": "Ensemble",
+      "CV_AUC": 0.839,
+      "CV_SD": 0.044,
+      "Test_AUC": 0.797,
+      "Train_AUC": 0.973,
+      "Seconds": 69.3
+    }
+  ],
+  "best": {
+    "Model": "Soft voting: LR + LDA + SVM + Gradient boosting",
+    "Threshold": 0.315,
+    "Test_AUC": 0.812,
+    "Accuracy": 0.848,
+    "Precision": 0.531,
+    "Recall": 0.441,
+    "F1": 0.481,
+    "Test_AUC_CI": [
+      0.754,
+      0.877
+    ]
+  },
+  "rf_train_auc": 1.0,
+  "baseline_test_auc": 0.808,
+  "n_train": 1102,
+  "n_test": 368,
+  "test_leavers": 59
+}
